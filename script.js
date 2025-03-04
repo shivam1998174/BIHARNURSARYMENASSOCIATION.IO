@@ -78,6 +78,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//------------------------------------------------------------image-gallery
+
+function openLightbox(img) {
+  document.getElementById('lightbox').classList.add('active');
+  document.getElementById('lightbox-img').src = img.src;
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+}
+
+
 // --------------------------------------footer
 
 document.getElementById("year").textContent = new Date().getFullYear();
