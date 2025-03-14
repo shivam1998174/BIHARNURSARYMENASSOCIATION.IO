@@ -44,9 +44,9 @@ const team_slides = document.querySelectorAll(".team-slide");
 
 function showSlide(index) {
   team_slides.forEach((team_slide, i) => {
-    team_slide.classList.remove("active");
+    team_slide.classList.remove("Active");
     if (i === index) {
-      team_slide.classList.add("active");
+      team_slide.classList.add("Active");
     }
   });
 }
